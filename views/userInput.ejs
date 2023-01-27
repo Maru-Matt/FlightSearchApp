@@ -1,0 +1,63 @@
+<%-include('header')%>
+<body>
+    <section class="pageWrapper">
+        <div class="inputForm">
+            <form action="/flight" method="post">
+                <div>
+                  <label class="form-label">Current City</label>
+                  <select  name="cityFrom" class="form-select" id="floatingSelectGrid">
+                    <option label="Ronald Reagan Washington National Airport">DCA</option>
+                    <option label="Washington Dulles International Airport">IAD</option>
+                    <option label="Atlanta International Airport">ATL</option>
+                    <option label="Chicago O'Hare International Airport	">ORD</option>
+                    <option label="Los Angeles International Airport">LAX</option>
+                    <option label="Dallas/Fort Worth International Airport">DFW</option>
+                    <option label="Houston George Bush Intercontinental Airport	">IAH</option>
+                    <option label="Las Vegas Harry Reid International Airport	">LAS</option>
+                    <option label="Tampa International Airport ">TPA</option>
+                    <option label="Miami International Airport"> MIA</option>
+                    <option label="Seattle-Tacoma International Airport">SEA</option>
+                    <option label="San Diego International Airport">SAN</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Fly To</label>
+                  <select name="cityTo" class="form-select" id="floatingSelectGrid">
+                    <option label="Atlanta International Airport">ATL</option>
+                    <option label="Chicago O'Hare International Airport	">ORD</option>
+                    <option label="Los Angeles International Airport">LAX</option>
+                    <option label="Dallas/Fort Worth International Airport">DFW</option>
+                    <option label="Houston George Bush Intercontinental Airport	">IAH</option>
+                    <option label="Las Vegas Harry Reid International Airport	">LAS</option>
+                    <option label="Tampa International Airport ">TPA</option>
+                    <option label="Miami International Airport"> MIA</option>
+                    <option label="Seattle-Tacoma International Airport">SEA</option>
+                    <option label="San Diego International Airport">SAN</option>
+                    <option label="Ronald Reagan Washington National Airport">DCA</option>
+                    <option label="Washington Dulles International Airport">IAD</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text">Max Price</span>
+                  <input type="number" name="maxPrice" aria-label="First name" class="form-control">
+                  
+                </div>
+                <div >
+                    <label class="dateFromLabel form-label">Date From</label>
+                    <input name="dateFrom" type="date" class="form-label" id="exampleCheck1">
+                  </div>
+                  <div >
+                    <label class="dateToLabel">Date To</label>
+                    <input name="dateTo" type="date" class="form-label" id="exampleCheck1">
+                  </div>
+                
+                <div class="d-grid gap-2">
+                  <button name="go" type="submit" class="flightSearchBtn btn btn-primary">Submit</button>
+                </div>                
+              </form>
+        </div>
+        
+    </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

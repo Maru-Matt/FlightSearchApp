@@ -1,0 +1,22 @@
+.pageWrapper {
+    width: 600px;
+    margin: 50px auto;
+}
+.inputForm{
+    background-color:aquamarine;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dateFromLabel{
+    margin-top: 10px; 
+}
+
+.dateToLabel{
+    margin-top: 20px; 
+}
+.flightSearchBtn{
+    margin-top: 10px; 
+}
